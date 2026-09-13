@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Nạp Game Tự Động</title>
+    <!-- Tích hợp Tailwind CSS qua CDN để style nhanh -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tùy chỉnh màu sắc thương hiệu */
+        .bg-brand { background-color: #1a1a2e; }
+        .text-brand { color: #e94560; }
+        .border-brand { border-color: #e94560; }
+    </style>
+</head>
+<body class="bg-brand text-gray-200 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-gray-900 border-b border-gray-800 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white tracking-wider">
+                NAP<span class="text-brand">GEM</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-brand transition">Trang chủ</a>
+                <a href="#" class="hover:text-brand transition">Lịch sử nạp</a>
+                <a href="#" class="hover:text-brand transition">Tin tức</a>
+                <a href="#" class="hover:text-brand transition">Hỗ trợ</a>
+            </nav>
+            <div class="flex space-x-3">
+                <button class="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-sm font-semibold transition">Đăng nhập</button>
+                <button class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded text-sm font-semibold transition">Đăng ký</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="container mx-auto px-4 mt-6">
+        <div class="w-full h-48 md:h-64 bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');">
+            <div class="text-center bg-black bg-opacity-60 p-6 rounded">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Nạp Thẻ Tự Động 24/7</h1>
+                <p class="text-gray-300">Chiết khấu cao - An toàn - Nhanh chóng</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Danh sách Game -->
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6 border-l-4 border-brand pl-3">Chọn Game Cần Nạp</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <!-- Thẻ Game 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-brand transition cursor-pointer group">
+                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500 group-hover:text-white">Ảnh Liên Quân</span>
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-lg">Liên Quân Mobile</h3>
+                    <p class="text-xs text-green-400 mt-1">Đang hoạt động</p>
+                </div>
+            </div>
+
+            <!-- Thẻ Game 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-brand transition cursor-pointer group">
+                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500 group-hover:text-white">Ảnh Free Fire</span>
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-lg">Free Fire</h3>
+                    <p class="text-xs text-green-400 mt-1">Đang hoạt động</p>
+                </div>
+            </div>
+
+            <!-- Thẻ Game 3 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-brand transition cursor-pointer group">
+                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500 group-hover:text-white">Ảnh Genshin</span>
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-lg">Genshin Impact</h3>
+                    <p class="text-xs text-red-400 mt-1">Bảo trì</p>
+                </div>
+            </div>
+            
+            <!-- Thẻ Game 4 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-brand transition cursor-pointer group">
+                <div class="h-32 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500 group-hover:text-white">Ảnh PUBG</span>
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-lg">PUBG Mobile</h3>
+                    <p class="text-xs text-green-400 mt-1">Đang hoạt động</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-12 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Hệ Thống Nạp Game. All rights reserved.</p>
+            <p class="mt-2">Vận hành tự động - Xử lý giao dịch trong 3 giây.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
